@@ -7,21 +7,12 @@
 		"build": "ng build",
 		"watch": "ng build --watch --configuration development",
 		"test": "ng test",
-		"prettier": "npx prettier --write .",
-		"prepare": "husky install"
+		"prettier": "npx prettier --write ."
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "lint-staged"
+			"pre-commit": "npm run prettier"
 		}
-	},
-	"lint-staged": {
-		"**/*.{ts}": [
-			"npm run prettier"
-		],
-		"**/*.{html,css,less,ejs}": [
-			"npm run prettier"
-		]
 	},
 	"private": true,
 	"dependencies": {
