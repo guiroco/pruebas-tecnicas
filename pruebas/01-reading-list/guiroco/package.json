@@ -6,7 +6,8 @@
 		"start": "ng serve",
 		"build": "ng build",
 		"watch": "ng build --watch --configuration development",
-		"test": "ng test"
+		"test": "ng test",
+    "prettier": "npx prettier . --write"
 	},
   "husky": {
     "hooks": {
@@ -15,10 +16,10 @@
   },
   "lint-staged": {
     "**/*.{ts}": [
-      "npx prettier --write"
+      "npm run prettier"
     ],
     "**/*.{html,css,less,ejs}": [
-      "npx prettier --write"
+      "npm run prettier"
     ]
   },
 	"private": true,
