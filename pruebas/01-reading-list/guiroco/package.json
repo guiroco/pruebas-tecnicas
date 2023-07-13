@@ -15,12 +15,10 @@
   },
   "lint-staged": {
     "*.{ts}": [
-      "prettier --write",
-      "git add"
+      "npx prettier --write"
     ],
     "*.{html,css,less,ejs}": [
-      "prettier --write",
-      "git add"
+      "npx prettier --write"
     ]
   },
 	"private": true,
