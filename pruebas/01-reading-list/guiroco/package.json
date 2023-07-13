@@ -14,10 +14,10 @@
     }
   },
   "lint-staged": {
-    "*.{ts}": [
+    "**/*.{ts}": [
       "npx prettier --write"
     ],
-    "*.{html,css,less,ejs}": [
+    "**/*.{html,css,less,ejs}": [
       "npx prettier --write"
     ]
   },
